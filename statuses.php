@@ -1,6 +1,5 @@
 <?php
-// error_reporting(E_ALL);
-// ini_set('display_errors', 1);
+
 ?>
 
 <!DOCTYPE html>
@@ -128,7 +127,7 @@ if (!empty($result['status']) && $result['status'] == 1) {
     }
 
     if (empty($leads)) {
-        echo "<p>пусто</p>";
+        echo "<p>--------</p>";
     } else {
         echo "<table border='1' cellpadding='5' cellspacing='0'>
                 <tr>
