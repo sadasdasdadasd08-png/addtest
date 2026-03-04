@@ -137,7 +137,7 @@ if (!empty($result['status']) && $result['status'] == 1) {
                     <th>FTD</th>
                 </tr>";
         foreach ($leads as $lead) {
-            $status = !empty($lead['status']) ? $lead['status'] : 'new';
+            $status = $lead['status'] ?? '';
             $ftd = $lead['ftd'] ?? '';
             echo "<tr>
                     <td>{$lead['id']}</td>
